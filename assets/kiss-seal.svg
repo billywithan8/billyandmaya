@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+<filter id="w" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="15"/><feDisplacementMap in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G"/></filter>
+<filter id="r" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="2" seed="22"/><feDisplacementMap in="SourceGraphic" scale="4" xChannelSelector="R" yChannelSelector="G"/></filter>
+<g filter="url(#w)"><circle cx="110" cy="110" r="96" fill="#ec7884" stroke="#1d1719" stroke-width="6"/></g>
+<g filter="url(#r)">
+<circle cx="110" cy="110" r="68" fill="none" stroke="#c4566a" stroke-width="13"/>
+<circle cx="110" cy="110" r="75" fill="none" stroke="#1d1719" stroke-width="2.5" opacity=".55"/>
+<circle cx="110" cy="110" r="61" fill="none" stroke="#1d1719" stroke-width="2.5" opacity=".55"/>
+</g>
+<path d="M110 146 C 72 120, 74 92, 92 88 C 101 86, 108 92, 110 100 C 112 92, 119 86, 128 88 C 146 92, 148 120, 110 146 Z" fill="#8e1a46" stroke="#5e0f2e" stroke-width="4" stroke-linejoin="round"/>
+</svg>

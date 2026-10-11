@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#9cc3e0">
+  <title>Billy &amp; Maya</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="logo">
+      <img src="assets/logo.png" alt="Maya and Billy kiss countdown">
+    </header>
+
+    <div class="layout">
+
+      <!-- ============ LEFT: the journey + kiss button ============ -->
+      <div class="journey-col">
+
+        <!-- WIDE scene (desktop + iPad) -->
+        <section class="scene scene-wide" data-kind="wide" aria-label="Maya and Billy walking toward the kissing tree">
+          <div class="veil"></div>
+          <div class="count">
+            <p class="until">until we kiss</p>
+            <div class="days"><span data-days>--</span> <span data-dayword>days</span></div>
+            <p class="together">together ♥</p>
+          </div>
+          <div class="road">
+            <div class="trail trail-l"></div>
+            <div class="trail trail-r"></div>
+            <div class="trail-rose trail-l walked-l"></div>
+            <div class="trail-rose trail-r walked-r"></div>
+            <img class="tree" src="assets/tree.webp" alt="The kissing tree, carved b+m">
+            <div class="flights"></div>
+            <div class="who who-maya">
+              <img class="bob sticker pose-walk" src="assets/maya-walk.webp" alt="Maya">
+              <img class="bob sticker pose-kiss" src="assets/maya-kiss.webp" alt="Maya blowing a kiss">
+            </div>
+            <div class="who who-billy">
+              <img class="bob bob-late sticker pose-walk" src="assets/billy-walk.webp" alt="Billy">
+              <img class="bob bob-late sticker pose-kiss" src="assets/billy-kiss.webp" alt="Billy blowing a kiss">
+            </div>
+          </div>
+          <img class="frame" src="assets/frame.png" alt="" aria-hidden="true">
+          <div class="letter-layer"></div>
+          <div class="meme-layer"></div>
+        </section>
+
+        <!-- TALL scene (phone) -->
+        <section class="scene scene-tall" data-kind="tall" aria-label="Maya and Billy walking toward the kissing tree">
+          <div class="veil"></div>
+          <div class="count">
+            <p class="until">until we kiss</p>
+            <div class="days"><span data-days>--</span> <span data-dayword>days</span></div>
+            <p class="together">together ♥</p>
+          </div>
+          <div class="dashes"></div>
+          <img class="tree" src="assets/tree.webp" alt="The kissing tree, carved b+m">
+          <div class="flights"></div>
+          <div class="who who-maya">
+            <img class="bob sticker pose-walk" src="assets/maya-walk.webp" alt="Maya">
+            <img class="bob sticker pose-kiss" src="assets/maya-kiss.webp" alt="Maya blowing a kiss">
+          </div>
+          <div class="who who-billy">
+            <img class="bob bob-late sticker pose-walk" src="assets/billy-walk.webp" alt="Billy">
+            <img class="bob bob-late sticker pose-kiss" src="assets/billy-kiss.webp" alt="Billy blowing a kiss">
+          </div>
+          <img class="frame" src="assets/frame-tall.png" alt="" aria-hidden="true">
+          <div class="letter-layer"></div>
+          <div class="meme-layer"></div>
+        </section>
+
+        <!-- the kiss button -->
+        <div class="kiss-wrap">
+          <button type="button" class="kissbtn" id="kiss-btn" aria-label="Send a kiss from afar">
+            <span class="kissbody">
+              <span class="seal-box" id="seal-box">
+                <img src="assets/kiss-seal.svg" alt="" aria-hidden="true">
+              </span>
+              <span class="pinkscrap">
+                <span class="gold swap-send">send a kiss from afar</span>
+                <span class="gold swap-sent">kiss sent ♥</span>
+              </span>
+            </span>
+          </button>
+          <span class="counter">
+            <span class="inked swap-send" id="kiss-count">kisses sent</span>
+            <span class="inked swap-sent">a kiss is on its way ♥</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- ============ RIGHT: the two pocket watches ============ -->
+      <section class="clocks-col" aria-label="What time it is for each of us">
+        <div class="watches">
+          <div class="watch-col watch-billy">
+            <div class="name">Billy</div>
+            <div class="watch sticker" id="watch-billy">
+              <img src="assets/pocketwatch.svg" alt="" aria-hidden="true">
+              <div class="hands">
+                <img class="hand-h" src="assets/pw-hour.svg" alt="" aria-hidden="true">
+                <img class="hand-m" src="assets/pw-minute.svg" alt="" aria-hidden="true">
+              </div>
+            </div>
+            <div class="scrap timecard tilt-l">
+              <div class="t"><span data-time>--:--</span> <span class="ampm" data-ampm></span></div>
+              <div class="sub" data-sub>&nbsp;</div>
+            </div>
+          </div>
+          <div class="watch-col watch-maya">
+            <div class="name">Maya</div>
+            <div class="watch sticker" id="watch-maya">
+              <img src="assets/pocketwatch.svg" alt="" aria-hidden="true">
+              <div class="hands">
+                <img class="hand-h" src="assets/pw-hour.svg" alt="" aria-hidden="true">
+                <img class="hand-m" src="assets/pw-minute.svg" alt="" aria-hidden="true">
+              </div>
+            </div>
+            <div class="scrap timecard tilt-r">
+              <div class="t"><span data-time>--:--</span> <span class="ampm" data-ampm></span></div>
+              <div class="sub" data-sub>&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <p class="scrap gap" id="gap">&nbsp;</p>
+        <div class="tools">
+          <img src="assets/pencil.svg" alt="" aria-hidden="true">
+          <button type="button" class="inked linkbtn" id="edit-btn">edit</button>
+          <span class="inked dot" aria-hidden="true">·</span>
+          <button type="button" class="inked linkbtn" id="who-btn">not you?</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- music toggle (only shows once a song is set in js/config.js) -->
+  <button type="button" class="music sticker" id="music-btn" aria-label="Play music" aria-pressed="false" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+  </button>
+
+  <!-- WHO ARE YOU (asked once per phone/computer) -->
+  <dialog class="sheet" id="who">
+    <div class="scrap sheet-inner">
+      <h2>who's here?</h2>
+      <p class="hint">so the kisses fly the right way</p>
+      <div class="pick">
+        <button type="button" class="pick-btn" data-me="billy">Billy</button>
+        <button type="button" class="pick-btn" data-me="maya">Maya</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- EDIT (locked behind the code word) -->
+  <dialog class="sheet" id="edit">
+    <div class="scrap sheet-inner">
+      <button class="sheet-close" type="button" data-close aria-label="Close">×</button>
+
+      <form id="unlock-form" class="step" autocomplete="off">
+        <h2>secret word?</h2>
+        <label class="field">
+          <span>code word</span>
+          <input id="code-input" type="password" autocapitalize="off" autocomplete="off" spellcheck="false" required>
+        </label>
+        <label class="check"><input id="remember" type="checkbox" checked> remember on this device</label>
+        <button class="btn" type="submit">unlock</button>
+        <p class="status" id="unlock-status" role="status"></p>
+      </form>
+
+      <form id="settings-form" class="step" hidden autocomplete="off">
+        <h2>update</h2>
+        <fieldset class="field">
+          <legend>she lands home (LA time)</legend>
+          <div class="row2">
+            <input id="f-date" type="date" required>
+            <input id="f-time" type="time" required>
+          </div>
+        </fieldset>
+        <label class="field">
+          <span>where she is (shown under her watch)</span>
+          <input id="f-place" maxlength="40" placeholder="e.g. Germany">
+        </label>
+        <label class="field">
+          <span>her time zone</span>
+          <input id="f-tz" list="tz-list" placeholder="e.g. Europe/Berlin" autocapitalize="off" spellcheck="false" required>
+          <datalist id="tz-list"></datalist>
+        </label>
+        <button class="btn btn-small" type="button" id="use-my-tz">use this device's time zone</button>
+        <button class="btn" type="submit">save</button>
+        <p class="status" id="save-status" role="status"></p>
+        <button class="linkish" type="button" id="forget-code">forget the code word on this device</button>
+      </form>
+
+      <div id="offline-note" class="step" hidden>
+        <h2>not connected yet</h2>
+        <p>The database isn't hooked up, so editing is off. Follow the setup guide (Supabase step), paste your URL and key into <code>js/config.js</code>, and this will work.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
