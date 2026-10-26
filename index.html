@@ -79,6 +79,7 @@
         </section>
 
         <!-- the kiss button -->
+        <div class="kiss-row">
         <div class="kiss-wrap">
           <button type="button" class="kissbtn" id="kiss-btn" aria-label="Send a kiss from afar">
             <span class="kissbody">
@@ -95,6 +96,13 @@
             <span class="inked swap-send" id="kiss-count">kisses sent</span>
             <span class="inked swap-sent">a kiss is on its way ♥</span>
           </span>
+        </div>
+
+        <!-- Billy's letter -->
+        <button type="button" class="note-btn" id="note-btn" aria-haspopup="dialog" aria-label="Open Billy's letter">
+          <img class="sticker" src="assets/letter-seal-yellow.svg" alt="" aria-hidden="true">
+          <span class="inked">a letter ♥</span>
+        </button>
         </div>
       </div>
 
@@ -140,6 +148,18 @@
       </section>
     </div>
   </main>
+
+  <!-- the letter, opened full screen (tap anywhere to close) -->
+  <dialog class="note" id="note" aria-label="A letter from Billy">
+    <button type="button" class="note-close" aria-label="Close the letter">×</button>
+    <div class="env" id="env">
+      <div class="ep ep-back"><img src="assets/env-back.svg" alt=""></div>
+      <img class="note-letter" id="note-letter" src="assets/letter.jpg" alt="A letter from Billy">
+      <div class="ep ep-front"><img src="assets/env-front.svg" alt=""></div>
+      <div class="ep ep-flap"><img src="assets/env-flap.svg" alt=""></div>
+      <div class="ep ep-seal"><img src="assets/kiss-seal.svg" alt=""></div>
+    </div>
+  </dialog>
 
   <!-- music toggle (only shows once a song is set in js/config.js) -->
   <button type="button" class="music sticker" id="music-btn" aria-label="Play music" aria-pressed="false" hidden>

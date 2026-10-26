@@ -558,6 +558,36 @@
     return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
+  /* =========================================================
+     BILLY'S LETTER — tap the envelope, tap anywhere to close
+     ========================================================= */
+  const note = $("#note");
+  const noteImg = $("#note-letter");
+  const letterSfx = new Audio("assets/letter.mp3");   // seal pop, paper rustle, little chime
+  letterSfx.preload = "auto";
+  // size the letter to fit the screen and work out where it sits inside the envelope
+  function sizeNote() {
+    const r = noteImg.naturalWidth ? noteImg.naturalHeight / noteImg.naturalWidth : 4 / 3;
+    const vw = window.innerWidth, vh = window.innerHeight;
+    const lw = Math.min(vw * 0.92, 760, (vh * 0.86) / r), lh = lw * r;
+    const ew = Math.min(vw * 0.8, 480), eh = ew * 0.62;
+    const s0 = Math.min((0.8 * eh) / lh, (0.8 * ew) / lw);
+    const set = (k, v) => note.style.setProperty(k, v);
+    set("--lw", lw.toFixed(1) + "px"); set("--lh", lh.toFixed(1) + "px");
+    set("--ew", ew.toFixed(1) + "px"); set("--s0", s0.toFixed(4));
+    set("--dy0", (eh * 0.04).toFixed(1) + "px"); set("--dy1", (-eh * 0.55).toFixed(1) + "px");
+  }
+  $("#note-btn").addEventListener("click", () => {
+    sizeNote();
+    note.showModal();
+    try {
+      letterSfx.currentTime = 0;
+      const r = letterSfx.play();
+      if (r && r.catch) r.catch(() => {});
+    } catch {}
+  });
+  note.addEventListener("click", () => note.close());
+
   /* ---------- go ---------- */
   scheduleTick();
   renderCount();
